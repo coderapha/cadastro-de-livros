@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Teko", sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h1 span:nth-child(1), h1 span:nth-child(6) {
+  color: #FEAFBE;
+}
+
+h1 span:nth-child(2), h1 span:nth-child(7) {
+  color: #B3DFD3;
+}
+
+h1 span:nth-child(3), h1 span:nth-child(8) {
+  color: #E68E7B;
+}
+
+h1 span:nth-child(4), h1 span:nth-child(9) {
+  color: #EFC764;
+}
+
+h1 span:nth-child(5), h1 span:nth-child(10) {
+  color: #97D4D9;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FFF2E7;
+}
+
+body#home {
+  background-color: #2F2325;
+}
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.stars .stars-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/main-bg.png");
+}
+
+.main-section {
+  width: 80%;
+  max-width: 1600px;
+  height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-section .main,
+.main-section .main-image {
+  position: relative;
+  width: 50%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-section .main {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-section .main .btn a {
+  color: #FFF2E7;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  margin: 1em 0 0 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.main-section .main .btn a span {
+  background-color: #A45A49;
+  padding: 0.5em;
+  color: #FFF2E7;
+  margin-right: 1em;
+}
+
+.main-section .main .btn a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.main-section .main-image {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-section .main-image img {
+  max-width: 90%;
+}
+
+.header {
+  width: 100%;
+  background-color: #2F2325;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1600px;
+  margin: auto;
+}
+
+form {
+  text-align: center;
+  width: 100%;
+}
+
+form input {
+  width: 50%;
+  padding: .5em 1em;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  margin: .5em 0;
+}
+
+form input[type="submit"] {
+  background-color: #2F2325;
+  color: #fff;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  font-size: 30px;
+  border-collapse: collapse;
+}
+
+table td {
+  border-bottom: 3px solid #FEAFBE;
+}
+
+table tr a {
+  color: #2F2325;
+}
+
+#github {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  border-radius: 50%;
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 0.625rem rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 0.625rem rgba(255, 255, 255, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 0.625rem rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 0.625rem rgba(255, 255, 255, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
